@@ -20,7 +20,8 @@ return {
             "force",
             {},
             vim.lsp.protocol.make_client_capabilities(),
-            cmp_lsp.default_capabilities())
+            cmp_lsp.default_capabilities()
+        )
 
         require("fidget").setup({})
         require("mason").setup()
@@ -77,16 +78,16 @@ return {
             })
         })
 
-        vim.diagnostic.config({
-            -- update_in_insert = true,
-            float = {
-                focusable = false,
-                style = "minimal",
-                border = "rounded",
-                source = "always",
-                header = "",
-                prefix = "",
-            },
-        })
+        --vim.diagnostic.config({
+        --    -- update_in_insert = true,
+        --    float = {
+        --        focusable = false,
+        --        -- style = "minimal",
+        --        border = "rounded",
+        --        source = "always",
+        --        header = "",
+        --        prefix = "",
+        --    },
+        --})
     end
 }
