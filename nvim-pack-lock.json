@@ -1,0 +1,56 @@
+{
+  "plugins": {
+    "blink": {
+      "rev": "8219b58f1c11a2fb1644d3c7116c509fa8348ec0",
+      "src": "https://github.com/saghen/blink.cmp"
+    },
+    "blink-lib": {
+      "rev": "fd9a48ebbe6ec30d5dfcc5b42c243941ccdca1aa",
+      "src": "https://github.com/saghen/blink.lib"
+    },
+    "devicons": {
+      "rev": "58447c1fca354bbf184425e4a8d01deecbd6f3c4",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
+    "lspconfig": {
+      "rev": "ffd261c09c3dabd0bf1a438f47a8ae3b22f3c3ff",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "mini": {
+      "rev": "81ed10ebe1144b0eb9a7f289ffae000c22772c20",
+      "src": "https://github.com/echasnovski/mini.nvim"
+    },
+    "oil.nvim": {
+      "rev": "b73018b75affd13fa38e2fc94ef753b465f770d7",
+      "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "plenary": {
+      "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
+      "src": "https://github.com/nvim-lua/plenary.nvim"
+    },
+    "telescope": {
+      "rev": "40aedd8a68c78a656a10a8d62d80c54af59420fb",
+      "src": "https://github.com/nvim-telescope/telescope.nvim"
+    },
+    "telescope-fzf": {
+      "rev": "b25b749b9db64d375d782094e2b9dce53ad53a40",
+      "src": "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+    },
+    "telescope-nerdy": {
+      "rev": "5d2d37f828a6df2f85e6df6b0a2b375f45bd5125",
+      "src": "https://github.com/2kabhishek/nerdy.nvim"
+    },
+    "telescope-symbols": {
+      "rev": "a6d0127a53d39b9fc2af75bd169d288166118aec",
+      "src": "https://github.com/nvim-telescope/telescope-symbols.nvim"
+    },
+    "telescope-ui-select": {
+      "rev": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2",
+      "src": "https://github.com/nvim-telescope/telescope-ui-select.nvim"
+    },
+    "vscode": {
+      "rev": "6439ed89d0e10193f07e92268a321d7c6f6e93ee",
+      "src": "https://github.com/Mofiqul/vscode.nvim"
+    }
+  }
+}
