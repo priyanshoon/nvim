@@ -48,6 +48,7 @@ end)
 
 -- some additional key bindings
 Keymap("n", "<C-c>", "<Esc>")
+Keymap({ "n", "v" }, "<leader>y", [["+y]])
 Keymap("n", "<leader>lf", function()
 	vim.lsp.buf.format()
 end)
