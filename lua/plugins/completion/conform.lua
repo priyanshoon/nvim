@@ -14,6 +14,7 @@ require("conform").setup({
 		nix = { "alejandra" },
 		css = { "prettier" },
 		rust = { "rustfmt" },
+		go = { "gofumpt" },
 	},
 	format_on_save = true,
 	undojoin = true,
