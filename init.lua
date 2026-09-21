@@ -54,6 +54,3 @@ vim.o.exrc = true
 -- Ignore case
 vim.o.ignorecase = true
 vim.o.smartcase = true
-
-
-

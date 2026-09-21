@@ -9,12 +9,10 @@ vim.pack.add({
 
 local actions = require("telescope.actions")
 require("telescope").setup({
-  defaults = {
-	file_ignore_patters = { ".git/", "%.csv", ".venv", ".node_modules", "node_modules", ".svelte-kit", ".vscode" }
-  },
+	defaults = {
+		file_ignore_patters = { ".git/", "%.csv", ".venv", ".node_modules", "node_modules", ".svelte-kit", ".vscode" },
+	},
 })
-
 
 require("telescope").load_extension("ui-select")
 require("telescope").load_extension("nerdy")
-

@@ -1,5 +1,5 @@
 vim.pack.add({
-  { src = "https://github.com/echasnovski/mini.nvim", name = "mini" }
+	{ src = "https://github.com/echasnovski/mini.nvim", name = "mini" },
 })
 
 require("mini.pairs").setup()
@@ -20,8 +20,8 @@ require("mini.cursorword").setup()
 
 require("mini.trailspace").setup()
 require("mini.move").setup({
-  mappings = {
-	down = "J",
-	up = "K"
-  }
+	mappings = {
+		down = "J",
+		up = "K",
+	},
 })
