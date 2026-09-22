@@ -12,6 +12,12 @@ require("telescope").setup({
 	defaults = {
 		file_ignore_patters = { ".git/", "%.csv", ".venv", ".node_modules", "node_modules", ".svelte-kit", ".vscode" },
 	},
+
+	extensions = {
+		["ui-select"] = {
+			require("telescope.themes").get_dropdown({}),
+		},
+	},
 })
 
 require("telescope").load_extension("ui-select")

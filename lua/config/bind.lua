@@ -14,7 +14,7 @@ end)
 for _, bind in ipairs({ "i", "a", "A", "I" }) do
 	Keymap("n", bind, function()
 		if vim.fn.getline("."):match("^%s*$") then
-			return [["_cc"]]
+			return [["_cc]]
 		else
 			return bind
 		end
