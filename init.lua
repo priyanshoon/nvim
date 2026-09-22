@@ -9,7 +9,7 @@ require("plugins.init")
 require("config.bind")
 -- requires end
 
-vim.cmd.colorscheme("vscode")
+vim.cmd.colorscheme("solarized")
 
 -- line numbers
 vim.wo.number = true
