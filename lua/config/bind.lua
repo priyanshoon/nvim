@@ -27,8 +27,8 @@ Keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
 -- Oil Keymap
 Keymap("n", "<leader>yv", "<cmd>Oil<CR>")
 
--- Telescope
-local builtin = require("telescope.builtin")
+-- Fzf Lua
+local builtin = require("fzf-lua")
 
 Keymap("n", "<leader>pf", function()
 	builtin.live_grep()
@@ -39,11 +39,11 @@ Keymap("n", "<leader>fb", function()
 end)
 
 Keymap("n", "<leader>ff", function()
-	builtin.find_files()
+	builtin.files({ previewer = false })
 end)
 
 Keymap("n", "<C-g>", function()
-	builtin.git_files()
+	builtin.git_files({ previewer = false })
 end)
 
 -- some additional key bindings
