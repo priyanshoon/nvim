@@ -31,7 +31,7 @@ Keymap("n", "<leader>yv", "<cmd>Oil<CR>")
 local builtin = require("telescope.builtin")
 
 Keymap("n", "<leader>pf", function()
-	builtin.live_grep({ hidden = true })
+	builtin.live_grep()
 end)
 
 Keymap("n", "<leader>fb", function()
