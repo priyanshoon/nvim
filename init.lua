@@ -9,7 +9,7 @@ require("plugins.init")
 require("config.bind")
 -- requires end
 
-vim.cmd.colorscheme("solarized")
+vim.cmd.colorscheme("solarized-osaka")
 
 -- line numbers
 vim.wo.number = true
