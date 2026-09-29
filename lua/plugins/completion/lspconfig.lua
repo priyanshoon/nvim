@@ -8,43 +8,44 @@ local hostname = vim.uv.os_gethostname()
 local lowerHostname = string.lower(hostname)
 
 vim.lsp.config("nixd", {
-  cmd = { "nixd" },
-  filetypes = { "nix" },
-  root_makers = { "flake.nix", ".git" },
-  settings = {
-	nixd = {
-	  nixpkgs = {
-		expr = "import <nixpkgs> { }",
-	  },
-	  formatting = {
-		command = { "alejandra" },
-	  },
+	cmd = { "nixd" },
+	filetypes = { "nix" },
+	root_makers = { "flake.nix", ".git" },
+	settings = {
+		nixd = {
+			nixpkgs = {
+				expr = "import <nixpkgs> { }",
+			},
+			formatting = {
+				command = { "alejandra" },
+			},
+		},
 	},
-  },
 })
 
 vim.lsp.config("lua_ls", {
-  settings = {
-	Lua = {
-	  completion = {
-		callSnippet = "Replace"
-	  },
-	  runtime = {
-		version = "LuaJIT",
-	  },
+	settings = {
+		Lua = {
+			completion = {
+				callSnippet = "Replace",
+			},
+			runtime = {
+				version = "LuaJIT",
+			},
+		},
 	},
-  },
 })
 
 vim.lsp.enable({
-  "lua_ls",
-  "ts_ls",
-  "pyrefly",
-  "cssls",
-  "nixd",
-  "rust_analyzer",
-  "gopls",
-  "emmet_language_server",
+	"lua_ls",
+	"ts_ls",
+	"pyrefly",
+	"cssls",
+	"tinymist",
+	"nixd",
+	"rust_analyzer",
+	"gopls",
+	"emmet_language_server",
 })
 
 vim.o.winborder = "rounded"
@@ -52,44 +53,42 @@ vim.o.winborder = "rounded"
 require("blink.cmp").build():pwait()
 
 require("blink.cmp").setup({
-  fuzzy = { implementation = "rust" },
-  appearance = { use_nvim_cmp_as_default = true },
+	fuzzy = { implementation = "rust" },
+	appearance = { use_nvim_cmp_as_default = true },
 
-  signature = {
-	enabled = false,
-  },
-
-  completion = {
-	trigger = {
-	  show_on_insert = true,
-	  show_on_trigger_character = true,
-	  show_on_keyword = true,
-	  show_on_backspace = true
+	signature = {
+		enabled = false,
 	},
 
-	list = {
-	  selection = {
-		preselect = false,
-		auto_insert = true,
-	  },
+	completion = {
+		trigger = {
+			show_on_insert = true,
+			show_on_trigger_character = true,
+			show_on_keyword = true,
+			show_on_backspace = true,
+		},
+
+		list = {
+			selection = {
+				preselect = false,
+				auto_insert = true,
+			},
+		},
+
+		menu = {
+			auto_show = true,
+			border = "rounded",
+			min_width = 35,
+			auto_show_delay_ms = 100,
+		},
 	},
 
-	menu = {
-	  auto_show = true,
-	  border = "rounded",
-	  min_width = 35,
-	  auto_show_delay_ms = 100,
+	sources = {
+		default = {
+			"lsp",
+			"snippets",
+			"buffer",
+			"path",
+		},
 	},
-  },
-
-  sources = {
-	default = {
-	  "lsp",
-	  "snippets",
-	  "buffer",
-	  "path"
-	}
-  }
 })
-
-

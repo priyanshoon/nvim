@@ -38,6 +38,7 @@
           prettier
           black
           alejandra
+          tinymist
           rustfmt
           gofumpt
           pyrefly
