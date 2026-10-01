@@ -3,5 +3,5 @@ vim.pack.add({
 })
 
 require("typst-preview").setup({
-	invert_colors = "always",
+	invert_colors = '{"rest": "always", "image": "never"}',
 })
