@@ -39,7 +39,6 @@ vim.lsp.config("lua_ls", {
 vim.lsp.enable({
 	"lua_ls",
 	"ts_ls",
-	"pyrefly",
 	"cssls",
 	"tinymist",
 	"nixd",

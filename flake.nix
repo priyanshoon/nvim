@@ -36,7 +36,6 @@
           gopls
           ast-grep
           prettier
-          black
           alejandra
           tinymist
           rustfmt
