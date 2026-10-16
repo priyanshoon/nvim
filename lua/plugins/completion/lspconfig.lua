@@ -36,6 +36,17 @@ vim.lsp.config("lua_ls", {
 	},
 })
 
+vim.lsp.config("gopls", {
+	settings = {
+		gopls = {
+			analyses = {
+				unusedparams = true,
+			},
+			gofumpt = true,
+		},
+	},
+})
+
 vim.lsp.enable({
 	"lua_ls",
 	"ts_ls",
