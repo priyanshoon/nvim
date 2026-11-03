@@ -1,6 +1,8 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+vim.opt.guicursor = ""
+
 local scrolloff = math.floor(vim.o.lines / 2) - 3
 vim.opt.scrolloff = scrolloff
 
