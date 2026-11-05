@@ -3,9 +3,9 @@ vim.pack.add({
 })
 
 require("scrollEOF").setup({
-	patters = "*",
+	pattern = "*",
 	insert_mode = false,
 	floating = true,
-	disabled_filesystem = { "terminal" },
+	disabled_filetypes = { "terminal" },
 	disabled_modes = { "t", "nt" },
 })
